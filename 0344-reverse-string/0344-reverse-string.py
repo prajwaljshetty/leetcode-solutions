@@ -6,4 +6,3 @@ class Solution:
         while left <= mid :
             s[left] , s[right] = s[right] , s[left]
             left  , right  = left + 1 , right - 1
-
