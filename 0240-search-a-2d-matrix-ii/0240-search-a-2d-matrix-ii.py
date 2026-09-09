@@ -7,7 +7,7 @@ class Solution:
                 return True
             elif matrix[i][j] > target : 
                 j -= 1
-            elif matrix[i][j] < target : 
+            else : 
                 i += 1
 
         return False
