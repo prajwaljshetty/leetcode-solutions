@@ -5,4 +5,4 @@ class Solution:
         while bits :
             if bits & 1 : count += 1
             bits >>= 1
-        return count 
+        return (x ^ y).bit_count()
