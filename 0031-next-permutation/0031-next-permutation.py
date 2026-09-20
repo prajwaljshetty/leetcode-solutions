@@ -9,9 +9,14 @@ class Solution:
                 break
 
         if pivot == -1 : 
-            print(len(nums)//2)
-            for i in range(len(nums)// 2) : nums[i] , nums[~i] = nums[~i],nums[i]
-            return
+            left , right = 0 , len(nums) - 1
+
+            while left < right :
+                nums[left] , nums[right] = nums[right] , nums[left]
+                left += 1
+                right -= 1
+                
+            return 
         
         for i in range(len(nums) - 1 , pivot , -1) :
             if nums[i] > nums[pivot] : 
