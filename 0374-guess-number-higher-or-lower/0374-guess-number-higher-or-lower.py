@@ -11,4 +11,4 @@ class Solution:
             else :
                 return pick(left,mid-1)
         
-        return pick(0,n)
+        return pick(1,n)
