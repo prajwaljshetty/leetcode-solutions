@@ -20,18 +20,12 @@ class Solution {
         ListNode curr;
         Random random = new Random();
 
-        for (curr = head; curr != null; curr = curr.next) {
-            length++;
-        }
+        for (curr = head; curr != null; curr = curr.next) length++;
 
         int target = random.nextInt(length);
-
-        for (curr = head; target > 0; target--) {
-            curr = curr.next;
-        }
+        for (curr = head; target > 0; target--) curr = curr.next;
 
         return curr.val;
-
     }
 }
 
