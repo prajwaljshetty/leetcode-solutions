@@ -10,10 +10,13 @@
 
 class Solution {
     TreeNode dfs( TreeNode currentNode , TreeNode target ){
-        if (currentNode == null) return null;
-        if( currentNode.val == target.val) return currentNode;
+        if (currentNode == null) 
+            return null;
+        if( currentNode.val == target.val) 
+            return currentNode;
         TreeNode leftNode = dfs(currentNode.left, target);
-        if( leftNode == null ) return dfs(currentNode.right, target);
+        if( leftNode == null ) 
+            return dfs(currentNode.right, target);
         return leftNode;
     }
 
