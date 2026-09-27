@@ -1,7 +1,3 @@
-/**
- * Note: The returned array must be malloced, assume caller calls free().
- */
-
 int* shuffle(int* nums, int numsSize, int n, int* returnSize){
     int *shuffledArray = malloc( numsSize * sizeof( int ));
     int indexX = 0 , indexY = 0 ;
@@ -14,4 +10,3 @@ int* shuffle(int* nums, int numsSize, int n, int* returnSize){
     *returnSize = numsSize;
     return shuffledArray;
 }
-
