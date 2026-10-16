@@ -1,3 +1,4 @@
+// Takes more time and space, but I like the approach :)
 int contains(char *word, char key[]) {
     int wordLength = strlen(word);
     int keyLength = strlen(key);
