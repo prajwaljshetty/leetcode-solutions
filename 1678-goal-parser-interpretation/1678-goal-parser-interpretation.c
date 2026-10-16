@@ -11,7 +11,6 @@ int contains(char *word, char key[]) {
             for (j = 0; j < keyLength; j++) {
                 if (word[i + j] != key[j]) break;
             }
-
             if (j == keyLength) return i;
         }
     }
@@ -41,7 +40,6 @@ char *replace(char *word, char old[], int start, char new[]) {
     }
 
     result[resultLength - 1] = '\0';
-
     return result;
 }
 
