@@ -1,0 +1,22 @@
+void swap(char* x , char* y){
+    char temp = *x;
+    *x = *y;
+    *y = temp;
+}
+
+
+char* reverseOnlyLetters(char* s) {
+    int left = 0 , right = strlen(s);
+
+    while(left < right){
+        if(isalpha(s[left]) && isalpha(s[right])){
+            swap(&s[left++],&s[right--]);
+        }else if(isalpha(s[left])){
+            right--;
+        }else{
+            left++;
+        }
+    }
+
+    return s;
+}
