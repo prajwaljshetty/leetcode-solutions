@@ -4,7 +4,6 @@ void swap(char* x , char* y){
     *y = temp;
 }
 
-
 char* reverseOnlyLetters(char* s) {
     int left = 0 , right = strlen(s) - 1;
 
@@ -17,6 +16,5 @@ char* reverseOnlyLetters(char* s) {
             left++;
         }
     }
-
     return s;
 }
