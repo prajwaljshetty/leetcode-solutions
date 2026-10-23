@@ -6,7 +6,7 @@ void swap(char* x , char* y){
 
 
 char* reverseOnlyLetters(char* s) {
-    int left = 0 , right = strlen(s);
+    int left = 0 , right = strlen(s) - 1;
 
     while(left < right){
         if(isalpha(s[left]) && isalpha(s[right])){
