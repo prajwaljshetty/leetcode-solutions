@@ -5,7 +5,7 @@ public:
 
         for(left = 0 ; left < nums.size() - 1 && nums[left] <= nums[left + 1]; left++);
 
-        if(left == nums.size()) return true;
+        if(left == nums.size() - 1) return true;
 
         for(int i = left + 1 ; i < (nums.size() + left ) ; i++){
             int j = i % nums.size();
