@@ -4,8 +4,9 @@ class Solution:
         leftSum = 0
 
         for i in range(len(nums)) :
-           if leftSum == (total - nums[i]) : return i
-           leftSum += nums[i]
-           total -= nums[i]
+            if leftSum == (total - nums[i]) : 
+                return i
+            leftSum += nums[i]
+            total -= nums[i]
 
         return -1        
