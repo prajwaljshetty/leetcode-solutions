@@ -1,11 +1,8 @@
 bool isCircularSentence(char* sentence) {
-    char prev = '\0';
 
-    for(int i = 1 ; sentence[i] != '\0' ; i++){
+    for(int i = 0 ; sentence[i + 1] != '\0' ; i++){
         if(sentence[i] == ' '){
-            prev = sentence[i - 1];
-        }else if(sentence[i - 1] == ' '){
-            if(prev != sentence[i]) return false;
+            if(sentence[i - 1] != sentence[i + 1]) return false;
         }
     }
 
