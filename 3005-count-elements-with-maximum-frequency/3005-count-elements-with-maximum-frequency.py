@@ -7,7 +7,6 @@ class Solution:
         for item in nums :
             frequency[item] = frequency.get(item , 0) + 1 
 
-            
         for item in nums :
             if frequency[item] > maxFreq :
                 maxFreq , count = frequency[item] , 1
